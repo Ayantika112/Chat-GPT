@@ -99,6 +99,7 @@ function App() {
 
   const increment = useCallback(() => {
     setCount(count + 1);
+    console.log('hi')
   }, []);
   return (
     <div>
