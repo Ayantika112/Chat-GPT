@@ -31,8 +31,7 @@ const SideBar = () => {
               }}>
                 <span><BiMessageAlt/></span>
                 How are you?
-              </button>
-              
+              </button>     
             </div>
           </div>
           <div className="upperSideBarFooter">
