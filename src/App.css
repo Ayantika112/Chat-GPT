@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: rgb(3 , 0 , 31);
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.chatGPT_App{
+    min-height: 100vh;
+    display: flex;
+}
+.upperSideBar{
+    flex: 2;
+    border: 1px solid rgb(100 , 100 , 100);
+}
+.logo{
+    margin-right: 1rem;
+}
+.brand{
+    font-size: 2rem;
+}
+.upperSideBar{
+    padding: 2.5rem;
+}
+.upperSideBarBody{
+    height: 70%;
+    font-size:small;
+}
+.btn{
+    border: none;
+    background: transparent;
+    color: white;
+    padding: 1rem;
+    width: 5rem;
+    cursor: pointer;
+}
+.btn-hover:hover {
+    background-color: rgba(172, 172, 165, 0.233);
+    border-radius: 0.5rem;
+  }
+.midBtn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 25rem;
+    border-radius: 0.5rem;
+    margin: 3rem;
+    font-size: 1.5rem;
+    border: 1px solid rgb(100 , 100 , 100);
+}
+.addBtn{
+    height: 2rem;
+    padding-right: 1.5rem;
+}
+.query{
+    padding: 1.8rem;
+    font-size: 1.5rem;
+    background: transparent;
+    color: white;
+    border: transparent;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.query span{
+    padding-right: 0.5rem;
+}
+.allQuestionList{
+    overflow: auto;
+}
+.imgUser span{
+    padding: 1rem;
+}
+.upperSideBarFooter{
+    padding: 2rem;
+    font-size:small;
+    border-top : 1px solid rgb(100 , 100 , 100);
+}
+.upperSideBarFooter div{
+    padding-bottom: 0.8rem;
+}
+.main{
+    flex: 10;
+    min-height: calc(100vh - 14rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chats{
+    height: 75rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-size: 1.3rem;
+    padding: 10px;
+    min-width: 10rem;
+}
+.chatsF{
+    background: rgb(222, 224, 226);
+    color: #000;
+    border-radius: 0.5rem;
+    width: 70rem;
+}
+
+.chatsF input {
+    width: 65rem;
+    height: 4rem;
+}
+
+.chatsF input , .chatsF button{
+/* border-radius: 0.8rem; */
+/* width: calc(100% - 3rem); */
+padding: 1rem;
+background: transparent;
+border: none;
+outline: none;
+} 
+.myQuestion div img{
+    width: 4rem;
+}
+.chatGPTAns div img{
+    width: 4rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: rgb(31, 78, 31);
+}
+.chatGPTAns div p,.myQuestion div p{
+    margin-left: 10px;
+}
+.chatGPTAns div{
+    background: rgb(69 94 113 / 34%)
+}
+.myQuestion div,.chatGPTAns div{
+    padding: 2rem;
+    margin: 1rem;
+    width: 80rem;
+    display: flex;
+    align-items: flex-start;
+    /* width: min-content; */
+    border-radius: 10px;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 255, 255, 0.3);
+  }
