@@ -28,7 +28,6 @@ const SideBar = () => {
             <div className="allQuestionList">
               <button className="query btn-hover" onClick={()=>{
                 data.changeInputVal.current.value = 'How are you?';
-                //data.callData(data.changeInputVal.current.value);
               }}>
                 <span><BiMessageAlt/></span>
                 How are you?
