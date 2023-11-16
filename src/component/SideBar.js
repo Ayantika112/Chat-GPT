@@ -11,6 +11,7 @@ import { Context } from "./MainBody";
 const SideBar = () => {
   var data = useContext(Context);
   console.log('Hi this is use context data :-  ',data);
+  console.log('Hi this is use context data :-  ',data);
   return (
     <>
       <div class="upperSideBar">
